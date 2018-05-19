@@ -1,0 +1,190 @@
+/* ===================
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* =================== */
+
+
+body {
+  min-height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+.site-title {
+  color: #231d39;
+  text-align: center;
+  padding-top: 20px;
+}
+.site-title h1 {
+  font-size: 11vw;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 130%;
+  letter-spacing: -0.03em;
+  text-indent: 50000px;
+  background: url("img/logo.png") no-repeat center top;
+  background-size: 4.83em;
+  overflow: hidden;
+}
+.site-title h1:after {
+  display: block;
+  margin: 0.4em auto 0;
+  content: " ";
+  height: 2px;
+  background: url("img/gradient.jpg") no-repeat;
+  background-size: cover;
+}
+.site-title h2 {
+  font-size: 6vw;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  color: #555;
+  margin: 0.5em 0 0.5em;
+}
+
+@media (min-width: 600px) {
+  .site-title h1 {
+    font-size: 59px;
+  }
+  .site-title h1:after {
+    width: 500px;
+  }
+
+  .site-title h2 {
+    font-size: 36px;
+  }
+}
+
+.container {
+  margin: 0 10px;
+}
+
+@media (min-width: 1020px) {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+p {
+  line-height: 140%;
+}
+
+.notice {
+  text-align: center;
+  font-size: 16px;
+}
+.notice img {
+  margin: 6vh 0;
+}
+@media (min-width: 600px) {
+  .notice {
+    font-size: 18px;
+  }
+}
+
+.buttons {
+  margin-top: 2em;
+  text-align: center;
+}
+.btn {
+  display: block;
+  padding: 15px 40px;
+	background: transparent;
+	color: #3b5998;
+	border: 1px solid #3b5998 ;
+  border-radius: 50px;
+  padding: 12px 0px;
+  font-size: 12px;
+  line-height: 190%;
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  background: #1a1a1a;
+  transition: all 0.2s ease;
+  max-width: 100%;
+}
+.btn:hover {
+	color: black;
+	border-color: black;
+}
+.btn:first-of-type {
+	background: #3b5998;
+	color: white;
+}
+.btn:first-of-type:hover {
+	background: white;
+	color: black;
+}
+.btn img {
+  height: 1.5em;
+  vertical-align: -7px;
+  margin-right: 7px;
+  transition: all 0.2s ease;
+}
+.btn:first-of-type:hover img {
+  filter: invert(100%);
+}
+@media (min-width: 600px) {
+  .buttons {
+    margin-top: 4em;
+  }
+  .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+}
+
