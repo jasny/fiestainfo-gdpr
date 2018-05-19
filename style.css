@@ -87,6 +87,9 @@ body {
 }
 
 @media (min-width: 600px) {
+  .site-title {
+    padding-top: 35px;
+  }
   .site-title h1 {
     font-size: 59px;
   }
